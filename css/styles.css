@@ -1,0 +1,294 @@
+:root {
+  --text-main-dark: #212121;
+  --main-light: #FFFFFF;
+  --text-sub: #757575;
+  --text-accent: #2196F3;
+  --text-accent-transparent: rgba(255, 255, 255, 0.6);
+  --background-dark: #2F303A;
+  --background-light: #F5F4FA;
+} 
+
+body {
+  font-family: 'Roboto', sans-serif;
+  
+  color: var(--text-main-dark);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  border: 1px solid red;
+}
+
+/*
+a {
+  text-decoration: none;  
+}
+
+ul {
+  list-style: none;
+}
+
+address {
+  font-style: normal;
+}
+*/
+
+/* HEADER */
+
+.head-section {
+  background-color: var(--main-light); 
+  color: var(--text-main-dark);  
+  display: flex;
+}
+
+.header-flex, .header-nav-list, .header-menu-list, .header-contact-list {
+  display: flex;
+}
+
+.header-flex {
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+/* .header-nav-list :first-child {
+  padding-top: 24px;
+  padding-bottom: 25px;
+} */
+
+
+
+.header-menu-list li:not(:last-child) {
+  margin-right: 50px;
+} 
+/*
+.header-a-list li :last-child {
+  margin-left: 50px;
+}*/
+
+.header-contact-list li :first-child {
+  
+  margin-right: 50px;
+}
+
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  outline: none;
+  color: var(--text-main-dark);
+}
+
+.logo-accent {
+  color: var(--text-accent);
+}
+
+.link {
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  outline: none; 
+  color: var(--text-main-dark);
+}
+
+.link:visited {
+  color: var(--text-main-dark);
+}
+
+.link:hover {
+  color: var(--text-accent);
+}
+
+.link:focus {
+  color: var(--text-accent);
+}
+
+.link.current {
+  color: var(--text-accent);
+}
+
+.head-contacts{
+  color: var(--text-sub);
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  outline: none;
+}
+
+.head-contacts:visited {
+  color: var(--text-sub);
+}
+
+.head-contacts:hover {
+  color: var(--text-accent);
+}
+
+.head-contacts:focus {
+  color: var(--text-accent);
+}  
+
+
+/* FOOTER */
+
+
+.footer-section {
+  background-color: var(--background-dark);
+  color: var(--main-light);
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.footer-logo {
+  color: var(--main-light);
+}
+
+.footer-contacts {
+  color: var(--text-accent-transparent);
+  outline: none;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.footer-contacts:visited {
+  color: var(--text-accent-transparent);
+}
+
+.footer-contacts:hover {
+  color: var(--text-accent);
+}
+
+.footer-contacts:focus {
+  color: var(--text-accent);
+}
+
+/* MAIN (index.html)*/
+
+/* MAIN - TITLE */
+
+.title-section {
+  background-color: var(--background-dark);
+
+}
+
+.title {
+  color: var(--main-light);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 200px 452px 0;
+  
+}
+
+.title-button {
+  background-color: var(--text-accent);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+
+  align-items: center;
+  text-align: center;
+  color: var(--main-light);
+  outline-color: var(--text-accent);
+  margin: 40px 732px 210px;
+}
+
+/* MAIN - FEATURES*/
+
+.decision-item {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.decision-item-text {
+  color: var(--text-sub);
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+/* MAIN - SIBTITLES*/
+
+.subtitle {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+}
+
+/* MAIN - OUR TEAM*/
+
+.team-section {
+  background-color: var(--background-light);
+}
+
+.team-section-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+
+  /*text-align: center;*/
+  letter-spacing: 0.03em;
+}
+
+.team-section-position {
+  color: var(--text-sub); 
+  font-size: 16px;
+  line-height: 19px;
+
+  /*text-align: center;*/
+  letter-spacing: 0.03em;
+}
+
+/*  PORTFOLIO  */
+
+.project-filter-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+  background-color: var(--background-light);
+}
+
+.project-filter-button:focus {
+  color: var(--main-light);
+  background-color: var(--text-accent);
+  outline: none;
+}
+
+.project-filter-button:hover {
+  color: var(--main-light);
+  background-color: var(--text-accent);
+  outline: none;
+}
+
+.project-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px; 
+  letter-spacing: 0.06em;
+}
+
+.project-type {
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: var(--text-sub);
+}
