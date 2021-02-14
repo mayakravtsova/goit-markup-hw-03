@@ -207,6 +207,7 @@ address {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   padding-top: 200px;
+  margin: 0;
 }
 
 .title-button {
@@ -218,6 +219,7 @@ address {
   color: var(--main-light);
   outline-color: var(--text-accent);
   padding: 10px 32px;
+  margin-top: 30px;
   margin-bottom: 200px; 
   border-color: var(--text-accent);
   border-radius: 4px;
