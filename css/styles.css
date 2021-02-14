@@ -245,15 +245,41 @@ address {
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
-
-  /* text-align: center; */
+  text-align: center; 
   letter-spacing: 0.03em;
+}
+
+.we-do-ul {
+  display: flex;
+}
+
+.we-do-ul li {
+  margin-top: 50px;
+  margin-bottom: 94px;
+}
+
+.we-do-ul :not(:first-child) {
+  margin-left: 30px;
 }
 
 /* MAIN - OUR TEAM*/
 
 .team-section {
   background-color: var(--background-light);
+}
+
+.team-section-ul {
+  display: flex;
+}
+
+.team-section-ul li {
+  margin-top: 50px;
+  margin-bottom: 94px;
+}
+
+.team-section-ul li :first-child{
+  padding-top: 50px;
+  
 }
 
 .team-section-name {
