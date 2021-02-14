@@ -52,8 +52,8 @@ address {
 .header-flex {
   justify-content: space-between;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 /* .header-nav-list :first-child {
@@ -203,7 +203,6 @@ address {
   color: var(--main-light);
   outline-color: var(--text-accent);
   padding: 10px 32px;
-  margin-top: 40px; 
   margin-bottom: 200px; 
  /* border-color: var(--text-accent);*/
   border-radius: 4px;
@@ -213,8 +212,16 @@ address {
 
 .decision {
   
+}
+
+.decision ul {
+  display: flex;
   justify-content: space-between;
-  align-items: center;display: flex;
+  align-items: center;
+}
+
+.decision li :not(:first-child) {
+  margin-left: 30px;
 }
 
 .decision-item {
@@ -229,6 +236,7 @@ address {
   color: var(--text-sub);
   line-height: 24px;
   letter-spacing: 0.03em;
+
 }
 
 /* MAIN - SIBTITLES*/
