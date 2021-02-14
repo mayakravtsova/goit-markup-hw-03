@@ -7,6 +7,7 @@
   --background-dark: #2F303A;
   --background-light: #F5F4FA;
   --header-border: #ECECEC;
+  --project-border: #EEEEEE;
 } 
 
 body {
@@ -25,7 +26,7 @@ address p {
 .container {
   width: 1200px;
   padding: 0 15px;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   margin: 0 auto;
 }
 
@@ -152,7 +153,6 @@ margin-right: 50px;
   line-height: 24px;
   letter-spacing: 0.03em;
   display: flex;
-  margin-top: 94px;
 }
 
 .footer-logo {
@@ -395,23 +395,32 @@ padding: 0px;
 .project-ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   margin: 0;
+}
+
+.project-ul :nth-child(3n){
+  margin-right: 0;
+}
+
+.project-ul {
+  margin-bottom: 94px;
 }
 
 .project-ul li {
   width: 370px;
   margin-top: 30px;
+  margin-right: 30px;
+  border: 1px solid var(--project-border);
 }
-
 
 .project-name {
   font-weight: 700;
   font-size: 18px;
   line-height: 36px; 
   letter-spacing: 0.06em;
-  margin-top: 20px;
-  margin-bottom: 4px;
+  margin: 20px 24px 4px; 
+  width: 322px;
 }
 
 .project-type {
@@ -419,6 +428,6 @@ padding: 0px;
   line-height: 30px;
   letter-spacing: 0.03em;
   color: var(--text-sub);
-  margin-top: 0;
-  margin-bottom: 20px;
+  margin: 0 24px 20px; 
+  width: 322px;
 }
