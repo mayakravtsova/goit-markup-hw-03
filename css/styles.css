@@ -112,6 +112,7 @@ address {
 
 
 .header-contacts-list :not(:last-child) {
+  margin-left: 331px;
   margin-right: 50px;
 }
 
