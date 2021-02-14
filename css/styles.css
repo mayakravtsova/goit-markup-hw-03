@@ -51,12 +51,12 @@ address {
   display: flex;
   border: 1px solid var(--header-border);
   margin: 0;
-  
 }
 
 .header-flex, .header-nav-list, .header-menu-list, .header-contacts-list {
  display: flex;
  list-style-type: none;
+ align-items: center;
  /*margin-left: 0px;*/
  /*padding-left: 0px;*/
 }
@@ -152,6 +152,7 @@ margin-right: 50px;
   line-height: 24px;
   letter-spacing: 0.03em;
   display: flex;
+  margin-top: 94px;
 }
 
 .footer-logo {
@@ -203,8 +204,8 @@ margin-right: 50px;
 
 .title-section {
   background-color: var(--background-dark);
-  display: flex;
-  flex-direction: column;
+ /* display: flex;
+  flex-direction: column;*/
   text-align: center;
 }
 
@@ -226,8 +227,8 @@ margin-right: 50px;
   line-height: 30px;
   letter-spacing: 0.06em;
 
-  align-items: center;
-  text-align: center;
+ /* align-items: center;*/
+ /* text-align: center;*/
   color: var(--main-light);
   outline-color: var(--text-accent);
   padding: 10px 32px;
@@ -359,23 +360,24 @@ padding: 0px;
 
 .project-filter-ul {
   display: flex;
- /* justify-content: space-between;*/ 
-  align-items: center;
-  /*padding-top: 24px;
-  padding-bottom: 25px;*/
-
+  justify-content: center;
+  text-align: center;
+  margin: 94px auto 20px;
 }
 
+.project-filter-ul :not(:last-child){
+  margin-right: 8px;
+}
 .project-filter-button {
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
-  /* text-align: center; */
+  text-align: center; 
   letter-spacing: 0.03em;
   background-color: var(--background-light);
   padding: 6px 22px;
-  margin-top: 94px;
-  margin-bottom: 50px;
+  border-color: var(--background-light);
+  border-radius: 4px;
 }
 
 .project-filter-button:focus {
@@ -391,6 +393,15 @@ padding: 0px;
 }
 
 .project-ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.project-ul li {
+  width: 370px;
+  margin-top: 30px;
 }
 
 
@@ -399,6 +410,8 @@ padding: 0px;
   font-size: 18px;
   line-height: 36px; 
   letter-spacing: 0.06em;
+  margin-top: 20px;
+  margin-bottom: 4px;
 }
 
 .project-type {
@@ -406,4 +419,6 @@ padding: 0px;
   line-height: 30px;
   letter-spacing: 0.03em;
   color: var(--text-sub);
+  margin-top: 0;
+  margin-bottom: 20px;
 }
